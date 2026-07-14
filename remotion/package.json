@@ -1,0 +1,19 @@
+{
+  "name": "agentic-auto-shafaq-remotion",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "remotion studio src/index.jsx",
+    "voice": "node scripts/generate-voice.mjs",
+    "bed": "node scripts/create-bed.mjs",
+    "render": "remotion render src/index.jsx AgenticAutomotiveExplainer ../assets/video/agentic-automotive-explainer.mp4 --codec h264 --audio-codec aac --overwrite"
+  },
+  "dependencies": {
+    "@remotion/cli": "latest",
+    "@remotion/media": "latest",
+    "@remotion/transitions": "latest",
+    "remotion": "latest"
+  },
+  "devDependencies": {}
+}
