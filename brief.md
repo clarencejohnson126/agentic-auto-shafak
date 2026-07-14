@@ -1,14 +1,14 @@
-# Projektbriefing: Agentic Auto Shafaq
+# Projektbriefing: Agentic Automotive
 
 ## 1. Projektziel
 
-Erstelle eine hochwertige, interaktive HTML-Präsentationswebsite, die Clarence einem Freund namens Shafaq auf einem MacBook zeigen kann.
+Erstelle eine hochwertige, interaktive HTML-Präsentationswebsite, die Clarence einem Freund namens Branchenpartner auf einem MacBook zeigen kann.
 
-Die Präsentation dient nicht dazu, Shafaq sofort eine Partnerschaft oder Beteiligung anzubieten.
+Die Präsentation dient nicht dazu, Branchenpartner sofort eine Kooperation oder Beteiligung anzubieten.
 
 Das Ziel ist:
 
-- Shafaq als erfahrenen Branchenkenner zu konsultieren
+- Branchenpartner als erfahrenen Branchenkenner zu konsultieren
 - ihm die Entwicklung von Agentic Commerce in der Autobranche verständlich zu erklären
 - ihm drei B2B-Ideen für freie Kfz-Werkstätten zu zeigen
 - ihm eine zusätzliche B2C-Idee für Privatkunden zu zeigen
@@ -18,13 +18,13 @@ Das Ziel ist:
 
 Die Präsentation soll wie ein lockeres, aber professionelles Beratungsgespräch wirken.
 
-Sie darf nicht wie ein aggressiver Startup-Pitch oder ein fertiges Verkaufsangebot wirken.
+Sie darf nicht wie ein aggressiver Startup-Pitch oder ein fertiges Gesprächsangebot wirken.
 
 ---
 
-## 2. Hintergrund zu Shafaq
+## 2. Hintergrund zu Branchenpartner
 
-Shafaq ist ungefähr 45 Jahre alt.
+Branchenpartner ist ungefähr 45 Jahre alt.
 
 Er ist:
 
@@ -47,7 +47,7 @@ Sein berufliches Umfeld besteht überwiegend aus:
 - Betrieben, die keine komplizierte neue Software lernen möchten
 - Unternehmern, die direkt wissen wollen, ob etwas Geld bringt oder Zeit spart
 
-Shafaq kennt nicht primär große Autohäuser oder professionelle Autohauskonzerne.
+Branchenpartner kennt nicht primär große Autohäuser oder professionelle Autohauskonzerne.
 
 Die Präsentation muss deshalb aus der Perspektive freier Werkstätten argumentieren.
 
@@ -55,7 +55,7 @@ Die Präsentation muss deshalb aus der Perspektive freier Werkstätten argumenti
 
 ## 3. Bisherige Situation
 
-Clarence hat Shafaq bereits vor einigen Monaten vorgeschlagen, seine internen Prozesse mit KI zu optimieren.
+Clarence hat Branchenpartner bereits vor einigen Monaten vorgeschlagen, seine internen Prozesse mit KI zu optimieren.
 
 Beispiele waren:
 
@@ -64,7 +64,7 @@ Beispiele waren:
 - Terminorganisation
 - Automatisierungen für Verwaltung und Abrechnung
 
-Shafaq sagte damals, dass er diese Lösungen für sein eigenes Geschäft aktuell nicht benötige.
+Branchenpartner sagte damals, dass er diese Lösungen für sein eigenes Geschäft aktuell nicht benötige.
 
 Gründe:
 
@@ -75,7 +75,7 @@ Gründe:
 
 Diese Diskussion soll nicht erneut aufgerollt werden.
 
-Die Präsentation soll Shafaq nicht noch einmal einen Telefonbot für sein eigenes Geschäft verkaufen.
+Die Präsentation soll Branchenpartner nicht noch einmal einen Telefonbot für sein eigenes Geschäft bewerben.
 
 Stattdessen soll er als externer Branchenexperte und Freund um Rat gebeten werden.
 
@@ -239,7 +239,7 @@ Welche KI-Agenten könnten in der echten Werkstattwelt funktionieren?
 
 ### Zusatz
 
-Vier Ideen. Keine fertige Wahrheit. Shafaq entscheidet, was die Realität überlebt.
+Vier Ideen. Keine fertige Wahrheit. Branchenpartner entscheidet, was die Realität überlebt.
 
 ### Visuelle Idee
 
@@ -420,7 +420,7 @@ Buttons:
 - weniger verlorene Reparaturaufträge
 - strukturierte Nachverfolgung
 
-## Frage an Shafaq
+## Frage an Branchenpartner
 
 Was passiert nach einem nicht bestandenen HU-Termin wirklich?
 
@@ -482,7 +482,7 @@ ATE Bremsscheiben und Beläge
 
 - Einkaufspreis: 219 Euro
 - Lieferung: heute bis 12:30 Uhr
-- erwartete Verkaufsmarge: 181 Euro
+- erwartete Gesprächsmarge: 181 Euro
 
 Buttons:
 
@@ -499,7 +499,7 @@ Buttons:
 - bessere Marge
 - weniger unnötige Rücksendungen
 
-## Frage an Shafaq
+## Frage an Branchenpartner
 
 Wie bestellen die Werkstätten in deinem Umfeld wirklich?
 
@@ -583,7 +583,7 @@ Buttons:
 - bessere Werkstattauslastung
 - vorhandene Kundendaten werden wirtschaftlich sinnvoll genutzt
 
-## Frage an Shafaq
+## Frage an Branchenpartner
 
 Nutzen die Werkstätten ihre vorhandenen Kundendaten aktiv?
 
@@ -684,7 +684,7 @@ Der spezialisierte Agent soll zusätzlich:
 - den realen Fahrzeugzustand einbeziehen
 - den Kaufprozess bis zur Entscheidung begleiten
 
-## Frage an Shafaq
+## Frage an Branchenpartner
 
 Welche Fehler machen private Käufer immer wieder?
 
@@ -720,13 +720,13 @@ Sie darf die konkreten Ideen nicht überlagern.
 
 # 13. Datenschutz und klare Grenzen
 
-Datenschutz ist für Shafaq ein zentrales Thema.
+Datenschutz ist für Branchenpartner ein zentrales Thema.
 
 Die Präsentation soll deshalb eine kompakte Vertrauensbox enthalten.
 
 Prinzipien:
 
-- keine Nutzung von Shafaqs Kundendaten
+- keine Nutzung von des Branchenpartners Kundendaten
 - keine automatische Übernahme von Prüfberichten
 - keine Nutzung seines Namens ohne Zustimmung
 - keine Nutzung von KÜS-, TÜV- oder anderen Prüfmarken
@@ -750,7 +750,7 @@ Die Website soll eine Vergleichsmatrix enthalten.
 Kriterien:
 
 - Nutzen für Werkstätten
-- Nähe zu Shafaqs Erfahrung
+- Nähe zu des Branchenpartners Erfahrung
 - einfacher Pilot
 - technischer Aufwand
 - Integrationsaufwand
@@ -762,7 +762,7 @@ Die Matrix darf eine vorsichtige Ersteinschätzung zeigen:
 
 ## Mängel-zu-Auftrag-Agent
 
-- sehr hohe Nähe zu Shafaq
+- sehr hohe Nähe zu Branchenpartner
 - gut verständlicher Nutzen
 - mittlerer technischer Aufwand
 - guter Pilotkandidat
@@ -809,18 +809,18 @@ Zusätzlich eine fünfte Option:
 
 - Keine davon
 
-## Abschlussfragen an Shafaq
+## Abschlussfragen an Branchenpartner
 
 1. Welche Idee löst ein echtes Problem?
-2. Welche Idee ist völliger Quatsch?
+2. Welche Idee ist völliger unbrauchbar?
 3. Welcher Prozess fehlt noch?
 4. Wofür würden Werkstattinhaber tatsächlich bezahlen?
 5. Welche Idee sollte zuerst mit einer echten Werkstatt getestet werden?
-6. Welche kritischen Details übersieht Clarence als Branchenfremder?
+6. Welche kritischen Details übersieht Clarence als Außenstehender?
 
 ## Letzter Satz
 
-Ich will heute nichts verkaufen und keine Partnerschaft beschließen.
+Ich will heute einfach verstehen, welche Idee in der echten Werkstattwelt Bestand hat.
 
 Ich möchte zuerst verstehen, welche Idee in der echten Werkstattwelt Bestand hat.
 
@@ -945,10 +945,10 @@ Zusätzlich sauber darstellen bei:
 
 # 18. Wichtige inhaltliche Regeln
 
-- Shafaq wird nicht als Mitgründer dargestellt
-- Shafaq wird nicht als öffentlicher Berater dargestellt
-- es wird keine Partnerschaft angeboten
-- es werden keine Kundendaten von Shafaq vorausgesetzt
+- Branchenpartner wird nicht als Mitgründer dargestellt
+- Branchenpartner wird nicht als öffentlicher Berater dargestellt
+- es wird keine Kooperation angeboten
+- es werden keine Kundendaten von Branchenpartner vorausgesetzt
 - es werden keine Prüfmarken verwendet
 - keine Idee wird als sicherer Erfolg dargestellt
 - keine erfundenen Marktanteile
@@ -967,15 +967,15 @@ Zusätzlich sauber darstellen bei:
 
 # 19. Erwartetes Ergebnis
 
-Die Website soll Shafaq innerhalb von ungefähr 10 bis 15 Minuten verständlich machen:
+Die Website soll Branchenpartner innerhalb von ungefähr 10 bis 15 Minuten verständlich machen:
 
 1. warum Agentic Commerce für die Autobranche relevant werden könnte
 2. warum WhatsApp eine geeignete Oberfläche sein kann
 3. welche vier konkreten Ideen Clarence untersucht
 4. wo die Chancen und Risiken liegen
-5. warum Shafaqs Erfahrung für die Bewertung wichtig ist
-6. dass Clarence keine sofortige Partnerschaft von ihm verlangt
+5. warum des Branchenpartners Erfahrung für die Bewertung wichtig ist
+6. dass Clarence keine sofortige Kooperation von ihm verlangt
 
 Das gewünschte Ergebnis des Gesprächs ist:
 
-Shafaq beginnt, die Ideen zu kritisieren, zu verbessern und aus seiner Werkstattrealität heraus weiterzuentwickeln.
+Branchenpartner beginnt, die Ideen zu kritisieren, zu verbessern und aus seiner Werkstattrealität heraus weiterzuentwickeln.

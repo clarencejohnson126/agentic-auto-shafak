@@ -2,7 +2,7 @@ import {mkdir, writeFile} from "node:fs/promises";
 import {dirname, resolve} from "node:path";
 
 const sampleRate = 44100;
-const seconds = 60;
+const seconds = 108;
 const channels = 1;
 const bitsPerSample = 16;
 const totalSamples = sampleRate * seconds;

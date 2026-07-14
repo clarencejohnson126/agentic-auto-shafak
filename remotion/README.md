@@ -1,32 +1,62 @@
 # Remotion-Erklärvideo
 
-## Gelesener Skill
+## Komposition
 
-- Skill: `remotion-best-practices`
-- Pfad: `/Users/clarence/Desktop/Video Skills in Claude Code/.agents/skills/remotion-best-practices/SKILL.md`
-- Regeldateien: Alle in `SKILL.md` referenzierten Dateien unter `rules/` wurden gelesen.
+- Composition-ID: `AgenticAutomotiveExplainer`
+- Format: `1920 x 1080 px`
+- Framerate: `30 fps`
+- Dauer: `108 Sekunden`
+- Ausgabe: `../assets/video/agentic-automotive-explainer.mp4`
 
-## Übernommene Regeln
+## Assets
 
-- Assets liegen lokal im `public/`-Ordner und werden über `staticFile()` referenziert.
-- Bildinhalte in Remotion werden mit Remotion-Komponenten oder React/SVG-artigen Elementen gerendert, nicht über externe URLs.
-- Audio wird lokal abgelegt und mit `<Audio>` aus `@remotion/media` eingebunden.
-- Alle Videobewegungen werden über `useCurrentFrame()`, `useVideoConfig()`, `interpolate()` und `spring()` gesteuert.
-- Keine CSS-Transitions oder CSS-Keyframe-Animationen innerhalb der Remotion-Komposition.
-- Die Komposition ist fest auf 1920 x 1080 Pixel, 30 fps und 60 Sekunden ausgelegt.
-- Szenen werden mit `<Sequence>` organisiert.
-- Keine externen Fonts; die Komposition nutzt Systemschriften.
+- Ursprüngliches Grid: `assets/images/remotion-agent-grid.png`
+- Einzelcrops: `assets/images/remotion-grid/*.png`
+- Kontaktübersicht: `assets/images/remotion-grid/contact-sheet.png`
+- Remotion-Kopien: `remotion/public/images/remotion-grid/*.png`
+- Crop-Manifest: `assets/images/remotion-grid/crop-manifest.md`
 
-## Abhängigkeiten
+Das vollständige Grid wird im finalen Video nicht gezeigt. Jedes Motiv wird als Einzelbild über `Img` und `staticFile()` geladen.
 
-- `remotion`
-- `@remotion/cli`
-- `@remotion/media`
-- `@remotion/transitions`
+## Crop-Koordinaten
+
+Originalgröße: `1024 x 1536 px`, Raster `2 x 4`, interne Trennlinien ca. `2 px`.
+
+| Nr. | Datei | Crop `x,y,w,h` | Videozeit | Fokus `x/y` |
+| --- | --- | --- | --- | --- |
+| 1 | `01-connected-vehicle.png` | `0,0,510,382` | `00:00-00:13.5` | `0.52 / 0.58` |
+| 2 | `02-whatsapp-workshop-agent.png` | `514,0,510,382` | `00:13.5-00:27` | `0.67 / 0.55` |
+| 3 | `03-defects-analysis-agent.png` | `0,386,510,382` | `00:27-00:40.5` | `0.58 / 0.52` |
+| 4 | `04-parts-purchasing-agent.png` | `514,386,510,382` | `00:40.5-00:54` | `0.55 / 0.56` |
+| 5 | `05-customer-return-agent.png` | `0,770,510,382` | `00:54-01:07.5` | `0.56 / 0.55` |
+| 6 | `06-used-car-buying-agent.png` | `514,770,510,382` | `01:07.5-01:21` | `0.62 / 0.54` |
+| 7 | `07-privacy-control-agent.png` | `0,1154,510,382` | `01:21-01:34.5` | `0.54 / 0.52` |
+| 8 | `08-agentic-automotive-network.png` | `514,1154,510,382` | `01:34.5-01:48` | `0.50 / 0.52` |
+
+## Szenen
+
+| Zeit | Motiv | Text |
+| --- | --- | --- |
+| `00:00-00:13.5` | Vernetztes Fahrzeug | `Agentic Automotive` |
+| `00:13.5-00:27` | Werkstattinhaber mit Smartphone | `WhatsApp wird zur Oberfläche` |
+| `00:27-00:40.5` | Prüfbericht und Mängelanalyse | `Vom Mängelbericht zum Auftrag` |
+| `00:40.5-00:54` | Bremsenteile und Vergleich | `Das richtige Teil zur richtigen Zeit` |
+| `00:54-01:07.5` | Kundendaten und Rückholprozess | `Bestandskunden werden zu neuen Terminen` |
+| `01:07.5-01:21` | Fahrzeugvergleich | `Vom Inserat zum geprüften Fahrzeug` |
+| `01:21-01:34.5` | Datenschutz und Freigabe | `Der Mensch behält die Kontrolle` |
+| `01:34.5-01:48` | Automotive-Ökosystem | `Welche Idee überlebt die Werkstattrealität?` |
+
+## Bewegungslogik
+
+- Jede Szene nutzt eine unscharfe Hintergrundkopie plus scharfes Vordergrundbild.
+- Die Hauptbilder erhalten individuelle Fokuswerte, dezente Ken-Burns-Bewegung und leichte Pans.
+- Datenlinien und Callouts werden framebasiert animiert.
+- Alle Texte bleiben echte Remotion-Textelemente.
+- Es gibt keine CSS-Keyframes oder CSS-Transitions in der Remotion-Komposition.
 
 ## Voiceover
 
-Das Voiceover wird aus deutschem Text mit ElevenLabs erzeugt und lokal gespeichert:
+Das deutsche Voiceover wird mit ElevenLabs erzeugt und lokal gespeichert:
 
 ```bash
 cd remotion
@@ -60,7 +90,6 @@ remotion/public/audio/bed.wav
 
 ```bash
 cd remotion
-npm install
 npm run render
 ```
 
@@ -69,7 +98,3 @@ Das MP4 wird hierhin geschrieben:
 ```text
 ../assets/video/agentic-automotive-explainer.mp4
 ```
-
-## Späterer Bildwechsel
-
-Die Komposition arbeitet aktuell mit selbst erstellten Formen, Typografie und lokalen Audiodateien. Falls finale PNG-Bilder im Video verwendet werden sollen, diese nach `remotion/public/images/` kopieren und in `src/Explainer.jsx` über `Img` und `staticFile()` referenzieren.

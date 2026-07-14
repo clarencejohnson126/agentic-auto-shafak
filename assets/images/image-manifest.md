@@ -90,13 +90,13 @@ Die Website lädt zuerst die PNG-Datei in `assets/images/`. Wenn diese noch nich
 - Beschreibung: getrennte Datenräume, Schloss, Freigabehand, Systemgrenzen
 - Vermeiden: juristische Garantiesymbolik, Behördenlogos, Angstbildsprache
 
-## 9. shafaq-consultation.png
+## 9. final-consultation.png
 
 - Einsatzort: Abschlussfolie
-- Motiv: Zwei Freunde diskutieren auf Augenhöhe über Werkstattprozesse
+- Motiv: Zwei Personen diskutieren auf Augenhöhe über Werkstattprozesse
 - Seitenverhältnis: 16:10
 - Empfohlene Pixelgröße: 1920 x 1200
 - Bildstil: stilisiert, respektvoll, nicht fotorealistisch
-- Alt-Text: Zwei Freunde diskutieren auf Augenhöhe über Werkstattprozesse, ohne konkrete Personen realistisch darzustellen
+- Alt-Text: Zwei Personen diskutieren auf Augenhöhe über Werkstattprozesse, ohne konkrete Personen realistisch darzustellen
 - Beschreibung: Tischgespräch, Laptop, Werkstattnotizen, Ideenkarten
-- Vermeiden: erfundene realistische Porträts konkreter Personen, stereotypes Milieu, Verkaufsmeeting-Optik
+- Vermeiden: erfundene realistische Porträts konkreter Personen, stereotypes Milieu, steife Meeting-Optik

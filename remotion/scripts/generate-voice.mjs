@@ -1,14 +1,19 @@
 import {mkdir, writeFile} from "node:fs/promises";
 import {dirname, resolve} from "node:path";
 
-const voiceoverText = `Agentic Automotive. Ausgangspunkt: Autoland spricht über Digitalisierung, Kundendaten und Agentic Commerce.
-Der Schatz liegt nicht im nächsten Chatbot, sondern in Prozessen, die wirklich Geld oder Zeit bewegen.
-Ein Chatbot erklärt. Ein Agent erledigt.
-Er erkennt einen Vorgang, nutzt erlaubte Daten, fragt nach, holt Freigaben ein und bringt den Prozess zum nächsten Schritt.
-Für freie Werkstätten muss die Oberfläche einfach sein: WhatsApp, Foto, Dokument, Sprachnachricht.
-Daraus entstehen vier Hypothesen: Mängel werden zu Aufträgen. Teile werden richtig bestellt. Bestandskunden kommen rechtzeitig zurück. Privatkunden kaufen Gebrauchtwagen besser vorbereitet.
-Wichtig bleibt: menschliche Freigabe, Datenschutz, kein unnötiges neues System.
-Shafaq, welche Idee überlebt die Werkstattrealität?`;
+const voiceoverText = `Agentic Automotive. Die Ausgangsfrage ist nicht: Bauen wir noch einen Chatbot?
+Die bessere Frage ist: Wo verliert eine Werkstatt heute Zeit, Geld oder Vertrauen, weil ein Prozess nicht sauber weiterläuft?
+Ein Agent erkennt nicht nur eine Nachricht. Er erkennt einen Vorgang, nutzt erlaubte Daten, stellt Rückfragen, holt Freigaben ein und bringt den nächsten Schritt in Bewegung.
+Die Oberfläche muss dafür nicht neu erfunden werden. In vielen freien Werkstätten beginnt alles längst in WhatsApp: ein Foto, ein Dokument, eine Sprachnachricht, eine Rückfrage, eine Freigabe.
+Daraus entstehen vier Hypothesen.
+Erstens: Der Mängel-zu-Auftrag-Agent. Aus einem Prüfbericht wird ein strukturierter Reparaturauftrag, verständlich für Kunde und Werkstatt.
+Zweitens: Der Teileeinkaufs-Agent. Preis, Lieferzeit, Qualität und Verfügbarkeit werden vergleichbar, bevor ein falsches Teil Zeit kostet.
+Drittens: Der Kunden-Rückhol-Agent. Vorhandene Daten werden zu rechtzeitigen Terminen, statt dass Anlässe ungenutzt verschwinden.
+Viertens: Der Gebrauchtwagen-Kaufagent. Ein Privatkäufer bekommt Hilfe, bevor er auf ein schlechtes Inserat, fehlende Dokumente oder falsche Versprechen hereinfällt.
+Aber der Kern bleibt Kontrolle: Kundendaten, Freigaben und Grenzen müssen sichtbar bleiben. Keine heimliche Bestellung. Keine Nachricht ohne klare Erlaubnis. Kein Agent, dem die Werkstatt nicht vertraut.
+Die Vision ist ein vernetztes Automotive-System aus Werkstätten, Fahrzeugen, Kunden und spezialisierten Agenten.
+Heute zählt nur der Realitätscheck.
+Welche Idee überlebt die Werkstattrealität? Und welche müssen wir sofort verwerfen?`;
 
 async function readStdin() {
   if (process.stdin.isTTY) {

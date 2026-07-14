@@ -2,6 +2,7 @@ import React from "react";
 import {
   AbsoluteFill,
   Easing,
+  Img,
   Sequence,
   interpolate,
   spring,
@@ -16,107 +17,220 @@ const palette = {
   muted: "#aeb8c7",
   navy: "#07111e",
   charcoal: "#101820",
-  panel: "rgba(255,255,255,0.085)",
+  panel: "rgba(7,17,30,0.76)",
   line: "rgba(255,255,255,0.16)",
   green: "#25d366",
   blue: "#2f6bff",
   orange: "#f59e0b",
-  paper: "#f7f3ea",
 };
 
-const scenes = [
+const totalSeconds = 108;
+
+const gridScenes = [
   {
+    id: 1,
     from: 0,
-    duration: 8,
-    eyebrow: "0-8 Sekunden",
-    title: "Der Schatz liegt in Daten und Prozessen",
-    body: "Autoland, Digitalisierung und Agentic Commerce zeigen: KI wird interessant, wenn sie echte Vorgänge weiterbringt.",
-    tags: ["Autohandel", "Kundendaten", "Prozesse", "nächster Schritt"],
-    mode: "network",
+    duration: 13.5,
+    src: "images/remotion-grid/01-connected-vehicle.png",
+    eyebrow: "Einstieg",
+    title: "Agentic Automotive",
+    body: "Nicht der nächste Chatbot ist spannend. Spannend ist ein Agent, der Fahrzeugdaten, Prozess und nächsten Schritt erkennt.",
+    tags: ["Fahrzeugdaten", "Prozess", "nächster Schritt"],
+    textSide: "left",
+    accent: palette.green,
+    focusX: 0.52,
+    focusY: 0.58,
+    scaleFrom: 1.02,
+    scaleTo: 1.09,
+    panX: -18,
+    panY: 8,
+    titleSize: 82,
+    callouts: [
+      {label: "Daten erkannt", x: 92, y: 92},
+      {label: "Werkstattprozess", x: 620, y: 138},
+      {label: "naechster Schritt", x: 420, y: 590},
+    ],
   },
   {
-    from: 8,
-    duration: 10,
-    eyebrow: "8-18 Sekunden",
-    title: "Ein Chatbot antwortet. Ein Agent erledigt.",
-    body: "Der Agent nutzt erlaubte Daten, stellt Rückfragen, holt Freigaben ein und bringt den Prozess zum Ergebnis.",
-    tags: ["erkennen", "prüfen", "freigeben", "ausführen"],
-    mode: "compare",
+    id: 2,
+    from: 13.5,
+    duration: 13.5,
+    src: "images/remotion-grid/02-whatsapp-workshop-agent.png",
+    eyebrow: "Oberflaeche",
+    title: "WhatsApp wird zur Oberfläche",
+    body: "Foto, Sprachnachricht, Dokument, Rückfrage und Freigabe bleiben dort, wo der Werkstattalltag ohnehin stattfindet.",
+    tags: ["WhatsApp", "Rückfrage", "Freigabe"],
+    textSide: "left",
+    accent: palette.green,
+    focusX: 0.67,
+    focusY: 0.55,
+    scaleFrom: 1.01,
+    scaleTo: 1.08,
+    panX: 14,
+    panY: -8,
+    titleSize: 68,
+    callouts: [
+      {label: "Sprachnachricht", x: 116, y: 126},
+      {label: "Dokument", x: 488, y: 96},
+      {label: "Freigabe", x: 566, y: 530},
+    ],
   },
   {
-    from: 18,
-    duration: 10,
-    eyebrow: "18-28 Sekunden",
-    title: "WhatsApp als Werkstatt-Oberfläche",
-    body: "Foto, Dokument, Sprachnachricht, Rückfrage und Freigabe: der Prozess beginnt dort, wo der Alltag schon stattfindet.",
-    tags: ["Foto", "Sprachnachricht", "Analyse", "Freigabe"],
-    mode: "phone",
-  },
-  {
-    from: 28,
-    duration: 5,
+    id: 3,
+    from: 27,
+    duration: 13.5,
+    src: "images/remotion-grid/03-defects-analysis-agent.png",
     eyebrow: "Idee 1",
-    title: "Mängel werden zu Aufträgen",
-    body: "Vom Prüfbericht zum verständlichen Reparaturauftrag.",
-    tags: ["Bericht", "Positionen", "Preis", "Termin"],
-    mode: "idea",
+    title: "Vom Mängelbericht zum Auftrag",
+    body: "Der Bericht wird strukturiert: Position, Preis, Rückfrage, Freigabe und Termin ergeben einen verständlichen Reparaturauftrag.",
+    tags: ["Bericht", "Positionen", "Auftrag"],
+    textSide: "right",
+    accent: palette.blue,
+    focusX: 0.58,
+    focusY: 0.52,
+    scaleFrom: 1.02,
+    scaleTo: 1.10,
+    panX: -20,
+    panY: -4,
+    titleSize: 66,
+    callouts: [
+      {label: "Bericht gelesen", x: 92, y: 520},
+      {label: "Mängel gruppiert", x: 526, y: 170},
+      {label: "Auftrag vorbereitet", x: 532, y: 452},
+    ],
   },
   {
-    from: 33,
-    duration: 5,
+    id: 4,
+    from: 40.5,
+    duration: 13.5,
+    src: "images/remotion-grid/04-parts-purchasing-agent.png",
     eyebrow: "Idee 2",
-    title: "Teile werden richtig bestellt",
-    body: "Lieferzeit, Preis, Marke und Marge in einer Entscheidung.",
-    tags: ["Fahrzeug", "Teil", "Lieferant", "Marge"],
-    mode: "parts",
+    title: "Das richtige Teil zur richtigen Zeit",
+    body: "Preis, Lieferzeit, Qualität und Verfügbarkeit werden vergleichbar, bevor eine Fehlbestellung den Hof blockiert.",
+    tags: ["Preis", "Lieferzeit", "Marge"],
+    textSide: "left",
+    accent: palette.blue,
+    focusX: 0.55,
+    focusY: 0.56,
+    scaleFrom: 1.02,
+    scaleTo: 1.09,
+    panX: -8,
+    panY: 10,
+    titleSize: 68,
+    callouts: [
+      {label: "Preis", x: 498, y: 130},
+      {label: "Verfügbarkeit", x: 646, y: 278},
+      {label: "Qualität", x: 270, y: 574},
+    ],
   },
   {
-    from: 38,
-    duration: 5,
+    id: 5,
+    from: 54,
+    duration: 13.5,
+    src: "images/remotion-grid/05-customer-return-agent.png",
     eyebrow: "Idee 3",
-    title: "Kunden kommen rechtzeitig zurück",
-    body: "Vorhandene Anlässe werden zu planbaren Werkstattterminen.",
-    tags: ["HU", "Inspektion", "Termin", "Einwilligung"],
-    mode: "calendar",
+    title: "Bestandskunden werden zu neuen Terminen",
+    body: "Aus vorhandenen Anlässen entstehen rechtzeitige Rückfragen, planbare Termine und weniger verlorene Kunden.",
+    tags: ["Anlass", "Kontakt", "Termin"],
+    textSide: "right",
+    accent: palette.green,
+    focusX: 0.56,
+    focusY: 0.55,
+    scaleFrom: 1.01,
+    scaleTo: 1.08,
+    panX: 18,
+    panY: -10,
+    titleSize: 64,
+    callouts: [
+      {label: "Kundendaten", x: 118, y: 120},
+      {label: "Rückholanlass", x: 468, y: 300},
+      {label: "Terminfenster", x: 588, y: 520},
+    ],
   },
   {
-    from: 43,
-    duration: 5,
+    id: 6,
+    from: 67.5,
+    duration: 13.5,
+    src: "images/remotion-grid/06-used-car-buying-agent.png",
     eyebrow: "B2C-Idee",
-    title: "Gebrauchtwagen besser prüfen",
-    body: "Inserate, Verkäuferantworten und technische Prüfung vor der Besichtigung.",
-    tags: ["Inserat", "Fragen", "Dokumente", "Prüfung"],
-    mode: "used",
+    title: "Vom Inserat zum geprüften Fahrzeug",
+    body: "Der Agent prüft Inserate, Verkäuferantworten und Dokumente, bevor ein Privatkäufer zur Besichtigung fährt.",
+    tags: ["Inserat", "Vergleich", "Prüfung"],
+    textSide: "left",
+    accent: palette.green,
+    focusX: 0.62,
+    focusY: 0.54,
+    scaleFrom: 1.01,
+    scaleTo: 1.08,
+    panX: -14,
+    panY: 0,
+    titleSize: 66,
+    callouts: [
+      {label: "Inserat", x: 310, y: 182},
+      {label: "Vergleich", x: 600, y: 116},
+      {label: "Checkliste", x: 646, y: 478},
+    ],
   },
   {
-    from: 48,
-    duration: 8,
-    eyebrow: "Gemeinsamer Kern",
-    title: "Reale Prozesse. Menschliche Freigabe. Datenschutz.",
-    body: "Keine unnötige neue Software, keine blinden Entscheidungen, kein Zugriff ohne klare Grenzen.",
-    tags: ["Werkstattprozess", "Freigabe", "Datenkontrolle", "Nutzen"],
-    mode: "control",
+    id: 7,
+    from: 81,
+    duration: 13.5,
+    src: "images/remotion-grid/07-privacy-control-agent.png",
+    eyebrow: "Kontrolle",
+    title: "Der Mensch behält die Kontrolle",
+    body: "Daten, Grenzen und Freigaben bleiben sichtbar. Keine Bestellung, keine Nachricht und kein Auftrag ohne erlaubte Kontrolle.",
+    tags: ["Datenschutz", "Freigabe", "Grenzen"],
+    textSide: "right",
+    accent: palette.green,
+    focusX: 0.54,
+    focusY: 0.52,
+    scaleFrom: 1.02,
+    scaleTo: 1.10,
+    panX: -16,
+    panY: -4,
+    titleSize: 68,
+    callouts: [
+      {label: "Einwilligung", x: 116, y: 276},
+      {label: "Mensch bestätigt", x: 418, y: 214},
+      {label: "Daten bleiben begrenzt", x: 522, y: 520},
+    ],
   },
   {
-    from: 56,
-    duration: 4,
-    eyebrow: "Frage an Shafaq",
+    id: 8,
+    from: 94.5,
+    duration: 13.5,
+    src: "images/remotion-grid/08-agentic-automotive-network.png",
+    eyebrow: "Realitätscheck",
     title: "Welche Idee überlebt die Werkstattrealität?",
-    body: "Shafaq, jetzt brauche ich deine ehrliche Einschätzung.",
-    tags: ["kritisieren", "sortieren", "verbessern"],
-    mode: "final",
+    body: "Die Vision zählt erst, wenn echte Werkstattgespräche die Engpässe bestätigen und die schwachen Hypothesen aussortieren.",
+    tags: ["ehrlich prüfen", "Pilot", "Werkstattrealität"],
+    textSide: "left",
+    accent: palette.blue,
+    focusX: 0.5,
+    focusY: 0.52,
+    scaleFrom: 1.08,
+    scaleTo: 1.01,
+    panX: 0,
+    panY: 0,
+    titleSize: 62,
+    callouts: [
+      {label: "Werkstatt", x: 614, y: 118},
+      {label: "Fahrzeug", x: 420, y: 346},
+      {label: "Agenten-Netz", x: 216, y: 562},
+    ],
   },
 ];
 
 const sec = (value, fps) => Math.round(value * fps);
 
 const fade = (frame, durationInFrames, fps) => {
-  const inValue = interpolate(frame, [0, sec(0.8, fps)], [0, 1], {
+  const fadeFrames = sec(0.75, fps);
+  const inValue = interpolate(frame, [0, fadeFrames], [0, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
     easing: Easing.out(Easing.quad),
   });
-  const outValue = interpolate(frame, [durationInFrames - sec(0.8, fps), durationInFrames], [1, 0], {
+  const outValue = interpolate(frame, [durationInFrames - fadeFrames, durationInFrames], [1, 0], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
     easing: Easing.in(Easing.quad),
@@ -127,7 +241,7 @@ const fade = (frame, durationInFrames, fps) => {
 const Background = () => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const sweep = interpolate(frame, [0, 60 * fps], [-300, 2200], {
+  const sweep = interpolate(frame, [0, totalSeconds * fps], [-420, 2320], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
@@ -136,7 +250,7 @@ const Background = () => {
     <AbsoluteFill
       style={{
         background:
-          "radial-gradient(circle at 20% 20%, rgba(47,107,255,0.22), transparent 28%), radial-gradient(circle at 80% 25%, rgba(37,211,102,0.12), transparent 30%), linear-gradient(135deg, #07111e, #101820 54%, #050a12)",
+          "radial-gradient(circle at 18% 16%, rgba(47,107,255,0.18), transparent 28%), radial-gradient(circle at 82% 24%, rgba(37,211,102,0.13), transparent 30%), linear-gradient(135deg, #07111e, #101820 54%, #050a12)",
       }}
     >
       <div
@@ -144,9 +258,9 @@ const Background = () => {
           position: "absolute",
           inset: 0,
           backgroundImage:
-            "linear-gradient(rgba(255,255,255,0.055) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px)",
+            "linear-gradient(rgba(255,255,255,0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.038) 1px, transparent 1px)",
           backgroundSize: "96px 96px",
-          opacity: 0.42,
+          opacity: 0.35,
         }}
       />
       <div
@@ -155,202 +269,287 @@ const Background = () => {
           top: 0,
           bottom: 0,
           left: sweep,
-          width: 320,
+          width: 300,
           transform: "skewX(-18deg)",
-          background: "linear-gradient(90deg, transparent, rgba(37,211,102,0.2), transparent)",
+          background: "linear-gradient(90deg, transparent, rgba(37,211,102,0.18), transparent)",
         }}
       />
-      <CarSilhouette x={260} y={720} scale={1.1} opacity={0.18} />
     </AbsoluteFill>
   );
 };
 
-const CarSilhouette = ({x, y, scale = 1, opacity = 1}) => (
-  <svg
-    viewBox="0 0 900 260"
-    style={{
-      position: "absolute",
-      left: x,
-      top: y,
-      width: 900 * scale,
-      height: 260 * scale,
-      opacity,
-      overflow: "visible",
-    }}
-  >
-    <path d="M70 170C120 70 230 40 370 40h155c120 0 230 42 305 130H70z" fill="#172536" stroke="#526070" strokeWidth="8" />
-    <circle cx="235" cy="190" r="52" fill="#06111d" stroke="#f8fafc" strokeWidth="12" />
-    <circle cx="660" cy="190" r="52" fill="#06111d" stroke="#f8fafc" strokeWidth="12" />
-    <path d="M285 95h290" stroke={palette.green} strokeWidth="9" strokeLinecap="round" />
-  </svg>
-);
+const sceneVisual = (scene) => ({
+  left: scene.textSide === "right" ? 130 : 770,
+  top: 122,
+  width: 1010,
+  height: 758,
+});
 
-const Phone = ({progress}) => {
-  const messages = [
-    "Sprachnachricht empfangen",
-    "Foto oder Bericht erkannt",
-    "Analyse läuft...",
-    "Rückfrage gestellt",
-    "Freigabe eingeholt",
-  ];
+const sceneText = (scene) => ({
+  left: scene.textSide === "right" ? 1090 : 140,
+  top: 206,
+  width: 650,
+});
+
+const DataLines = ({scene, frame}) => {
+  const dash = interpolate(frame % 90, [0, 90], [0, -180], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+  const glow = 0.4 + Math.sin((frame + scene.id * 9) / 18) * 0.2;
+
   return (
-    <div
-      style={{
-        width: 330,
-        height: 610,
-        borderRadius: 42,
-        background: "#07111e",
-        border: `8px solid ${palette.paper}`,
-        padding: 22,
-        boxShadow: "0 30px 70px rgba(0,0,0,0.42)",
-      }}
-    >
-      <div style={{height: 66, borderRadius: 20, background: "#10251d", color: palette.ink, padding: 14, fontWeight: 800}}>
-        Werkstatt-Agent
-        <div style={{fontSize: 20, color: "#9fdab8", fontWeight: 500}}>Mock-up</div>
-      </div>
-      <div style={{display: "flex", flexDirection: "column", gap: 14, marginTop: 22}}>
-        {messages.map((message, index) => {
-          const shown = progress > index * 0.17;
-          return (
-            <div
-              key={message}
-              style={{
-                alignSelf: index % 2 === 0 ? "flex-start" : "flex-end",
-                maxWidth: "90%",
-                borderRadius: 20,
-                padding: "14px 16px",
-                background: index % 2 === 0 ? palette.paper : "#d9fdd3",
-                color: palette.charcoal,
-                fontSize: 22,
-                lineHeight: 1.2,
-                opacity: shown ? 1 : 0,
-                transform: `translateY(${shown ? 0 : 18}px)`,
-              }}
-            >
-              {message}
-            </div>
-          );
-        })}
-      </div>
-    </div>
+    <svg viewBox="0 0 1010 758" style={{position: "absolute", inset: 0, opacity: 0.55}}>
+      <path
+        d="M80 540 C260 450, 365 288, 506 378 C650 470, 716 260, 926 210"
+        fill="none"
+        stroke={scene.accent}
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeDasharray="24 26"
+        strokeDashoffset={dash}
+      />
+      <path
+        d="M96 210 C306 174, 398 272, 518 230 C646 186, 760 350, 918 432"
+        fill="none"
+        stroke={scene.id % 2 ? palette.blue : palette.green}
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeDasharray="16 24"
+        strokeDashoffset={-dash * 0.55}
+      />
+      {[0.2, 0.45, 0.72].map((position, index) => (
+        <circle
+          key={position}
+          cx={96 + position * 812}
+          cy={index === 1 ? 384 : index === 2 ? 438 : 220}
+          r={8 + glow * 5}
+          fill={index === 1 ? palette.green : palette.blue}
+          opacity={0.45 + glow * 0.35}
+        />
+      ))}
+    </svg>
   );
 };
 
-const SceneGraphic = ({mode, progress}) => {
-  if (mode === "phone") {
-    return <Phone progress={progress} />;
-  }
+const Callouts = ({scene, frame, fps, visual}) => (
+  <>
+    {scene.callouts.map((callout, index) => {
+      const entrance = spring({
+        frame: frame - sec(1.4 + index * 0.55, fps),
+        fps,
+        config: {damping: 180, stiffness: 95, mass: 0.6},
+      });
+      const pulse = 0.78 + Math.sin((frame + index * 24) / 22) * 0.1;
+      return (
+        <div
+          key={callout.label}
+          style={{
+            position: "absolute",
+            left: visual.left + callout.x,
+            top: visual.top + callout.y,
+            padding: "12px 16px",
+            borderRadius: 999,
+            background: "rgba(7,17,30,0.84)",
+            border: `1px solid ${scene.accent}`,
+            color: palette.ink,
+            fontSize: 22,
+            fontWeight: 800,
+            boxShadow: `0 0 ${22 + pulse * 14}px ${scene.accent}44`,
+            opacity: entrance,
+            transform: `translateY(${(1 - entrance) * 18}px) scale(${0.94 + entrance * 0.06})`,
+            whiteSpace: "nowrap",
+          }}
+        >
+          {callout.label}
+        </div>
+      );
+    })}
+  </>
+);
 
-  if (mode === "compare") {
-    return (
-      <div style={{display: "grid", gridTemplateColumns: "1fr 1fr", gap: 26, width: 760}}>
-        {["Chatbot", "Agent"].map((label, index) => (
-          <div
-            key={label}
-            style={{
-              height: 420,
-              borderRadius: 24,
-              padding: 34,
-              border: `2px solid ${index ? "rgba(37,211,102,0.55)" : palette.line}`,
-              background: index ? "rgba(37,211,102,0.15)" : palette.panel,
-              transform: `translateY(${(1 - progress) * (index ? 30 : 10)}px)`,
-            }}
-          >
-            <div style={{fontSize: 30, color: index ? palette.green : palette.muted, fontWeight: 850}}>{label}</div>
-            <div style={{fontSize: 58, fontWeight: 900, marginTop: 46, lineHeight: 1}}>
-              {index ? "erledigt" : "erklärt"}
-            </div>
-            <div style={{marginTop: 42, color: palette.muted, fontSize: 25, lineHeight: 1.35}}>
-              {index ? "Freigabe, Systeme und nächster Schritt." : "Antwort, Text und Empfehlung."}
-            </div>
-          </div>
-        ))}
-      </div>
-    );
-  }
-
-  const cards = {
-    network: ["Daten", "Prozess", "Agent", "Ergebnis"],
-    idea: ["Bericht", "Mängel", "Auftrag", "Termin"],
-    parts: ["Teil", "Preis", "Lieferung", "Marge"],
-    calendar: ["Anlass", "Kontakt", "Termin", "Buchung"],
-    used: ["Inserat", "Fragen", "Dokumente", "Prüfung"],
-    control: ["Einwilligung", "Grenzen", "Freigabe", "Übergabe"],
-    final: ["Problem", "Quatsch", "Pilot", "Realität"],
-  }[mode] ?? ["Daten", "Agent", "Freigabe", "Ergebnis"];
+const ImageStage = ({scene, frame, fps, progress}) => {
+  const visual = sceneVisual(scene);
+  const imageScale = interpolate(progress, [0, 1], [scene.scaleFrom, scene.scaleTo], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+  const panX = interpolate(progress, [0, 1], [0, scene.panX], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+  const panY = interpolate(progress, [0, 1], [0, scene.panY], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+  const imageSrc = staticFile(scene.src);
 
   return (
-    <div style={{position: "relative", width: 760, height: 520}}>
-      <CarSilhouette x={-50} y={300} scale={0.82} opacity={0.48} />
-      {cards.map((card, index) => {
-        const angle = (index / cards.length) * Math.PI * 2 - Math.PI / 2;
-        const radius = 190;
-        const cx = 380 + Math.cos(angle) * radius;
-        const cy = 240 + Math.sin(angle) * radius;
-        const scale = spring({
-          frame: progress * 90 - index * 6,
-          fps: 30,
-          config: {damping: 200},
-        });
-        return (
-          <React.Fragment key={card}>
-            <div
-              style={{
-                position: "absolute",
-                left: 380,
-                top: 250,
-                width: Math.max(0, progress) * radius,
-                height: 3,
-                transformOrigin: "0 0",
-                transform: `rotate(${angle}rad)`,
-                background: index % 2 ? palette.blue : palette.green,
-                opacity: 0.65,
-              }}
-            />
-            <div
-              style={{
-                position: "absolute",
-                left: cx - 92,
-                top: cy - 46,
-                width: 184,
-                height: 92,
-                borderRadius: 18,
-                background: index === 0 ? palette.paper : palette.panel,
-                color: index === 0 ? palette.charcoal : palette.ink,
-                border: `2px solid ${palette.line}`,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: 28,
-                fontWeight: 850,
-                transform: `scale(${scale})`,
-              }}
-            >
-              {card}
-            </div>
-          </React.Fragment>
-        );
-      })}
+    <>
+      <Img
+        src={imageSrc}
+        style={{
+          position: "absolute",
+          inset: -26,
+          width: "calc(100% + 52px)",
+          height: "calc(100% + 52px)",
+          objectFit: "cover",
+          objectPosition: `${scene.focusX * 100}% ${scene.focusY * 100}%`,
+          transform: `scale(${1.22 + progress * 0.04}) translate(${panX * -0.12}px, ${panY * -0.12}px)`,
+          filter: "blur(28px)",
+          opacity: 0.44,
+        }}
+      />
       <div
         style={{
           position: "absolute",
-          left: 270,
-          top: 150,
-          width: 220,
-          height: 220,
-          borderRadius: "50%",
-          background: `linear-gradient(135deg, ${palette.green}, ${palette.blue})`,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          color: "#06140a",
-          fontSize: 42,
-          fontWeight: 950,
-          transform: `scale(${0.85 + progress * 0.15})`,
+          inset: 0,
+          background:
+            scene.textSide === "left"
+              ? "linear-gradient(90deg, rgba(5,10,18,0.96) 0%, rgba(5,10,18,0.84) 34%, rgba(5,10,18,0.28) 58%, rgba(5,10,18,0.68) 100%)"
+              : "linear-gradient(90deg, rgba(5,10,18,0.68) 0%, rgba(5,10,18,0.28) 42%, rgba(5,10,18,0.84) 66%, rgba(5,10,18,0.96) 100%)",
+        }}
+      />
+      <div
+        style={{
+          position: "absolute",
+          left: visual.left,
+          top: visual.top,
+          width: visual.width,
+          height: visual.height,
+          borderRadius: 28,
+          overflow: "hidden",
+          border: "2px solid rgba(255,255,255,0.18)",
+          boxShadow: "0 34px 90px rgba(0,0,0,0.46)",
+          background: palette.charcoal,
         }}
       >
-        Agent
+        <Img
+          src={imageSrc}
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            objectPosition: `${scene.focusX * 100}% ${scene.focusY * 100}%`,
+            transformOrigin: `${scene.focusX * 100}% ${scene.focusY * 100}%`,
+            transform: `translate(${panX}px, ${panY}px) scale(${imageScale})`,
+          }}
+        />
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            background:
+              "linear-gradient(180deg, rgba(0,0,0,0.1), transparent 42%, rgba(0,0,0,0.36)), radial-gradient(circle at 50% 50%, transparent 54%, rgba(0,0,0,0.38))",
+          }}
+        />
+        <DataLines scene={scene} frame={frame} />
+      </div>
+      <Callouts scene={scene} frame={frame} fps={fps} visual={visual} />
+    </>
+  );
+};
+
+const TextPanel = ({scene, frame, fps}) => {
+  const text = sceneText(scene);
+  const titleEntrance = spring({
+    frame: frame - sec(0.25, fps),
+    fps,
+    config: {damping: 170, stiffness: 90, mass: 0.65},
+  });
+  const bodyOpacity = interpolate(frame, [sec(0.9, fps), sec(1.6, fps)], [0, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
+  return (
+    <div
+      style={{
+        position: "absolute",
+        left: text.left,
+        top: text.top,
+        width: text.width,
+        transform: `translateY(${(1 - titleEntrance) * 36}px)`,
+      }}
+    >
+      <div
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+          gap: 14,
+          color: scene.accent,
+          fontSize: 25,
+          fontWeight: 900,
+          textTransform: "uppercase",
+          letterSpacing: 0,
+          marginBottom: 24,
+          opacity: titleEntrance,
+        }}
+      >
+        <span
+          style={{
+            display: "inline-flex",
+            width: 44,
+            height: 44,
+            borderRadius: 999,
+            alignItems: "center",
+            justifyContent: "center",
+            background: scene.accent,
+            color: "#06140a",
+          }}
+        >
+          {scene.id}
+        </span>
+        {scene.eyebrow}
+      </div>
+      <div
+        style={{
+          color: palette.ink,
+          fontSize: scene.titleSize,
+          lineHeight: 0.98,
+          fontWeight: 950,
+          letterSpacing: 0,
+          opacity: titleEntrance,
+        }}
+      >
+        {scene.title}
+      </div>
+      <div
+        style={{
+          marginTop: 34,
+          color: palette.muted,
+          fontSize: 32,
+          lineHeight: 1.28,
+          opacity: bodyOpacity,
+        }}
+      >
+        {scene.body}
+      </div>
+      <div style={{display: "flex", flexWrap: "wrap", gap: 14, marginTop: 42}}>
+        {scene.tags.map((tag, index) => {
+          const chipOpacity = interpolate(frame, [sec(1.65 + index * 0.28, fps), sec(2.1 + index * 0.28, fps)], [0, 1], {
+            extrapolateLeft: "clamp",
+            extrapolateRight: "clamp",
+          });
+          return (
+            <div
+              key={tag}
+              style={{
+                padding: "12px 18px",
+                borderRadius: 999,
+                color: index === 0 ? "#06140a" : palette.ink,
+                background: index === 0 ? scene.accent : "rgba(255,255,255,0.1)",
+                border: `1px solid ${index === 0 ? scene.accent : palette.line}`,
+                fontSize: 23,
+                fontWeight: 780,
+                opacity: chipOpacity,
+                transform: `translateY(${(1 - chipOpacity) * 14}px)`,
+              }}
+            >
+              {tag}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
@@ -365,47 +564,23 @@ const Scene = ({scene}) => {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
-  const textY = interpolate(frame, [0, sec(1.2, fps)], [40, 0], {
-    extrapolateLeft: "clamp",
-    extrapolateRight: "clamp",
-    easing: Easing.out(Easing.quad),
-  });
 
   return (
     <AbsoluteFill style={{opacity}}>
-      <div style={{position: "absolute", left: 115, top: 116, right: 105, bottom: 96, border: `2px solid ${palette.line}`, borderRadius: 28}} />
-      <div style={{position: "absolute", left: 160, top: 170, width: 780, transform: `translateY(${textY}px)`}}>
-        <div style={{color: palette.green, fontSize: 28, fontWeight: 900, textTransform: "uppercase", marginBottom: 26}}>
-          {scene.eyebrow}
-        </div>
-        <div style={{color: palette.ink, fontSize: scene.mode === "final" ? 88 : 74, lineHeight: 0.98, fontWeight: 950, letterSpacing: 0}}>
-          {scene.title}
-        </div>
-        <div style={{color: palette.muted, fontSize: 34, lineHeight: 1.28, marginTop: 36, width: 720}}>
-          {scene.body}
-        </div>
-        <div style={{display: "flex", flexWrap: "wrap", gap: 14, marginTop: 44}}>
-          {scene.tags.map((tag, index) => (
-            <div
-              key={tag}
-              style={{
-                padding: "12px 18px",
-                borderRadius: 999,
-                color: index === 0 ? "#06140a" : palette.ink,
-                background: index === 0 ? palette.green : "rgba(255,255,255,0.1)",
-                border: `1px solid ${palette.line}`,
-                fontSize: 24,
-                fontWeight: 760,
-                opacity: progress > index * 0.12 ? 1 : 0,
-              }}
-            >
-              {tag}
-            </div>
-          ))}
-        </div>
-      </div>
-      <div style={{position: "absolute", right: 150, top: 205}}>
-        <SceneGraphic mode={scene.mode} progress={progress} />
+      <div style={{position: "absolute", left: 104, top: 88, right: 104, bottom: 78, border: `2px solid ${palette.line}`, borderRadius: 30}} />
+      <ImageStage scene={scene} frame={frame} fps={fps} progress={progress} />
+      <TextPanel scene={scene} frame={frame} fps={fps} />
+      <div
+        style={{
+          position: "absolute",
+          right: 138,
+          bottom: 96,
+          color: "rgba(248,250,252,0.62)",
+          fontSize: 24,
+          fontWeight: 760,
+        }}
+      >
+        {String(scene.id).padStart(2, "0")} / 08
       </div>
     </AbsoluteFill>
   );
@@ -417,10 +592,10 @@ export const Explainer = () => {
   return (
     <AbsoluteFill style={{fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif"}}>
       <Background />
-      <Audio src={staticFile("audio/bed.wav")} volume={0.09} />
+      <Audio src={staticFile("audio/bed.wav")} volume={0.08} />
       <Audio src={staticFile("audio/voiceover.mp3")} volume={0.96} />
-      {scenes.map((scene) => (
-        <Sequence key={scene.title} from={sec(scene.from, fps)} durationInFrames={sec(scene.duration, fps)} premountFor={fps}>
+      {gridScenes.map((scene) => (
+        <Sequence key={scene.id} from={sec(scene.from, fps)} durationInFrames={sec(scene.duration, fps)} premountFor={fps}>
           <Scene scene={scene} />
         </Sequence>
       ))}

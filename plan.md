@@ -1,8 +1,8 @@
-# Umsetzungsplan: Agentic Auto Shafaq
+# Umsetzungsplan: Agentic Automotive
 
 Status: Planungsdatei. Noch keine Website-Erstellung.
 
-Grundannahme aus `brief.md`: Die spätere Website wird eine statische, offline-fähige HTML-Präsentation für ein lockeres Beratungsgespräch mit Shafaq. Sie soll primär auf einem MacBook mit 1440 x 900 Pixel funktionieren und in 10 bis 15 Minuten durchführbar sein.
+Grundannahme aus `brief.md`: Die spätere Website wird eine statische, offline-fähige HTML-Präsentation für ein lockeres Beratungsgespräch mit Branchenpartner. Sie soll primär auf einem MacBook mit 1440 x 900 Pixel funktionieren und in 10 bis 15 Minuten durchführbar sein.
 
 ---
 
@@ -10,17 +10,17 @@ Grundannahme aus `brief.md`: Die spätere Website wird eine statische, offline-f
 
 Die Präsentation soll nicht wie ein Pitch wirken, sondern wie eine geführte Denkstrecke:
 
-1. **Rahmen setzen:** Clarence verkauft nichts, sondern bittet Shafaq um Branchenrealität.
+1. **Rahmen setzen:** Clarence startet mit einer einfachen Frage nach Branchenrealität.
 2. **Auslöser erklären:** Autoland, Datensilos, KI im Vertrieb und Agentic Commerce zeigen, warum das Thema jetzt relevant wird.
 3. **Begriff entwirren:** Der Unterschied zwischen Chatbot und Agent wird extrem einfach gemacht.
 4. **Oberfläche erden:** WhatsApp wird als vertrauter Einstieg für freie Werkstätten gezeigt.
 5. **Drei Werkstattideen prüfen:** Jede B2B-Idee wird als Hypothese vorgestellt, mit konkretem Ablauf, WhatsApp-Beispiel, Nutzen und kritischer Frage.
 6. **Eine Privatkundenidee prüfen:** Der Gebrauchtwagen-Kaufagent zeigt, wie derselbe Denkansatz auch B2C wirken könnte.
-7. **Zusammenhang und Grenzen zeigen:** Die Ideen werden nicht als fertige Produktfamilie verkauft, sondern als mögliche Prozesskette mit Datenschutzgrenzen.
-8. **Ehrliche Bewertung erzwingen:** Eine Vergleichsmatrix zeigt Chancen, Aufwand, Risiko und Nähe zu Shafaqs Erfahrung.
-9. **Shafaq aktivieren:** Am Ende stehen Auswahlkarten und konkrete Fragen, damit Shafaq kritisiert, sortiert und verbessert.
+7. **Zusammenhang und Grenzen zeigen:** Die Ideen werden als mögliche Prozesskette mit Datenschutzgrenzen eingeordnet.
+8. **Ehrliche Bewertung erzwingen:** Eine Vergleichsmatrix zeigt Chancen, Aufwand, Risiko und Nähe zu des Branchenpartners Erfahrung.
+9. **Branchenpartner aktivieren:** Am Ende stehen Auswahlkarten und konkrete Fragen, damit Branchenpartner kritisiert, sortiert und verbessert.
 
-Ton: direkt, verständlich, leicht humorvoll, respektvoll gegenüber freien Werkstätten. Keine übertriebene Startup-Sprache, keine erfundenen Zahlen, keine Partnerschaftsandeutung.
+Ton: direkt, verständlich, leicht humorvoll, respektvoll gegenüber freien Werkstätten. Keine übertriebene Startup-Sprache, keine erfundenen Zahlen, keine Kooperationsandeutung.
 
 ---
 
@@ -57,11 +57,11 @@ Unterzeile:
 
 Kurzer Rahmen:
 
-> Vier Ideen. Keine fertige Wahrheit. Shafaq entscheidet, was die Realität überlebt.
+> Vier Ideen. Keine fertige Wahrheit. Branchenpartner entscheidet, was die Realität überlebt.
 
 Nebenhinweis:
 
-> Heute geht es nicht um eine Partnerschaft und nicht um einen Verkauf. Es geht um ehrliche Einschätzung aus der Werkstattwelt.
+> Heute geht es nicht um eine Kooperation und nicht um einen Gespräch. Es geht um ehrliche Einschätzung aus der Werkstattwelt.
 
 ### Abschnitt 2: Der Auslöser
 
@@ -135,7 +135,7 @@ Nutzen:
 
 > Schneller vom HU-Bericht zum Auftrag. Weniger Erklärungsaufwand. Weniger verlorene Reparaturchancen.
 
-Frage an Shafaq:
+Frage an Branchenpartner:
 
 > Was passiert nach einem nicht bestandenen HU-Termin wirklich? Wo hilft so ein Agent, und wo wäre er gefährlicher Unsinn?
 
@@ -153,7 +153,7 @@ Nutzen:
 
 > Weniger Suchzeit, weniger Fehlbestellungen, bessere Einkaufspreise, bessere Lieferentscheidungen.
 
-Frage an Shafaq:
+Frage an Branchenpartner:
 
 > Was zählt in echten Werkstätten mehr: Preis, Geschwindigkeit, Marke oder Rückgabemöglichkeit?
 
@@ -171,7 +171,7 @@ Nutzen:
 
 > Mehr planbare Termine, bessere Auslastung, weniger Abhängigkeit von neuer Werbung.
 
-Frage an Shafaq:
+Frage an Branchenpartner:
 
 > Nutzen Werkstätten ihre vorhandenen Kundendaten aktiv oder warten sie einfach, bis der Kunde wiederkommt?
 
@@ -189,7 +189,7 @@ Nutzen:
 
 > Weniger Fehlkäufe, bessere Vorbereitung, echte technische Einschätzung statt nur Inseratsvergleich.
 
-Frage an Shafaq:
+Frage an Branchenpartner:
 
 > Welche Fehler machen private Käufer immer wieder, bevor sie überhaupt zur Besichtigung fahren?
 
@@ -205,11 +205,11 @@ Tab `Zusammenhang`:
 
 Tab `Bewertung`:
 
-> Mängel-zu-Auftrag wirkt nah an Shafaqs Erfahrung. Teileeinkauf hat großen Hebel, aber hohe Integrationskomplexität. Kunden-Rückholung ist schnell testbar, aber datenschutzsensibel. Gebrauchtwagen-Kauf hat B2C-Potenzial, braucht aber echte Ausführung.
+> Mängel-zu-Auftrag wirkt nah an des Branchenpartners Erfahrung. Teileeinkauf hat großen Hebel, aber hohe Integrationskomplexität. Kunden-Rückholung ist schnell testbar, aber datenschutzsensibel. Gebrauchtwagen-Kauf hat B2C-Potenzial, braucht aber echte Ausführung.
 
 Tab `Grenzen`:
 
-> Keine Nutzung von Shafaqs Daten. Keine Prüfmarken. Keine unkontrollierten Entscheidungen. Jeder Betrieb bleibt Herr seiner Daten. Wichtige Schritte brauchen menschliche Freigabe.
+> Keine Nutzung von des Branchenpartners Daten. Keine Prüfmarken. Keine unkontrollierten Entscheidungen. Jeder Betrieb bleibt Herr seiner Daten. Wichtige Schritte brauchen menschliche Freigabe.
 
 ### Abschnitt 10: Abschluss
 
@@ -228,14 +228,14 @@ Auswahlkarten:
 Abschlussfragen:
 
 > Welche Idee löst ein echtes Problem?  
-> Welche ist Quatsch?  
+> Welche ist unbrauchbar?
 > Welcher Prozess fehlt?  
 > Wofür würden Werkstattinhaber tatsächlich bezahlen?  
-> Was übersieht Clarence als Branchenfremder?
+> Was übersieht Clarence als Außenstehender?
 
 Letzter Satz:
 
-> Ich will heute nichts verkaufen und keine Partnerschaft beschließen. Ich möchte verstehen, welche Idee in der echten Werkstattwelt Bestand hat.
+> Ich will heute einfach verstehen, welche Idee in der echten Werkstattwelt Bestand hat. Ich möchte verstehen, welche Idee in der echten Werkstattwelt Bestand hat.
 
 ---
 
@@ -357,7 +357,7 @@ Keine negativen Letterspacings, keine viewport-basiert skalierenden Schriftgrö�
 - `comparison-card`: Chatbot vs. Agent.
 - `phone-mockup`: Smartphone mit Chatblasen und Buttons.
 - `process-timeline`: 3 bis 5 Prozessschritte pro Idee.
-- `idea-summary`: Nutzen, Risiko, Frage an Shafaq.
+- `idea-summary`: Nutzen, Risiko, Frage an Branchenpartner.
 - `matrix`: kompakte Bewertungstabelle.
 - `trust-box`: Datenschutz- und Grenzprinzipien.
 - `choice-card`: Abschlussauswahl.
@@ -447,7 +447,7 @@ Nach Freigabe und Umsetzung lokal testen:
    - Keine Textwände.
    - Keine echten Kundendaten.
    - Keine Prüfmarken.
-   - Keine Partnerschafts- oder Verkaufsbehauptung.
+   - Keine Kooperations- oder Gesprächsbehauptung.
    - Jede Idee bleibt als Hypothese erkennbar.
 
 7. Accessibility-Test:
@@ -462,8 +462,8 @@ Nach Freigabe und Umsetzung lokal testen:
 
 Damit keine Textwände entstehen, werden folgende Briefing-Inhalte gekürzt oder visuell ausgelagert:
 
-- **Shafaq-Hintergrund:** Nicht als langer Personenblock zeigen. Nur indirekt in Tonalität, Fragen und Werkstattperspektive einbauen.
-- **Bisherige Situation:** Nur kurz erwähnen: Es geht nicht erneut um Shafaqs eigene Prozessautomatisierung.
+- **Branchenpartner-Hintergrund:** Nicht als langer Personenblock zeigen. Nur indirekt in Tonalität, Fragen und Werkstattperspektive einbauen.
+- **Bisherige Situation:** Nur kurz erwähnen: Es geht nicht erneut um des Branchenpartners eigene Prozessautomatisierung.
 - **Autoland/Lindner-Kontext:** Auf 4 bis 5 Kernpunkte plus ein Zitat reduzieren.
 - **Agentic-Commerce-Erklärung:** Keine lange Definition. Nur `Chatbot erklärt` vs. `Agent erledigt`.
 - **WhatsApp-Vorteile:** Maximal sechs kurze Punkte, Rest über Mock-up zeigen.
