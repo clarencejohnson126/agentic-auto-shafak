@@ -29,3 +29,6 @@ temp/
 
 .vscode/
 .idea/
+
+# Local source dumps for manually generated images. Curated copies live in assets/images/.
+FOTOS/

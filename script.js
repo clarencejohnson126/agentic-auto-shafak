@@ -167,12 +167,21 @@ video.addEventListener("error", () => {
   videoFallback.hidden = false;
 });
 
+video.addEventListener("loadedmetadata", () => {
+  videoFallback.hidden = true;
+});
+
+function showVideoFallbackWhenSourceFailed() {
+  const hasSourceProblem = Boolean(video.error) || video.networkState === 3;
+  videoFallback.hidden = !hasSourceProblem;
+}
+
 videoPlay.addEventListener("click", async () => {
   if (video.paused) {
     try {
       await video.play();
     } catch {
-      videoFallback.hidden = false;
+      showVideoFallbackWhenSourceFailed();
     }
   } else {
     video.pause();
@@ -184,7 +193,7 @@ videoReplay.addEventListener("click", async () => {
   try {
     await video.play();
   } catch {
-    videoFallback.hidden = false;
+    showVideoFallbackWhenSourceFailed();
   }
 });
 

@@ -441,6 +441,7 @@ h3 {
   position: relative;
   border-radius: 14px;
   overflow: hidden;
+  height: clamp(320px, 38vh, 430px);
   min-height: 330px;
   background: rgba(255, 255, 255, 0.07);
   box-shadow: var(--shadow);
@@ -465,10 +466,12 @@ h3 {
 }
 
 .hero-image {
+  height: clamp(470px, 58vh, 560px);
   min-height: 520px;
 }
 
 .inline-art {
+  height: 230px;
   min-height: 230px;
   margin-top: 28px;
 }
@@ -766,17 +769,24 @@ h3 {
 
 .video-slide {
   align-items: center;
+  padding-top: 82px;
+  padding-bottom: 34px;
 }
 
 .video-heading {
   width: min(1120px, 100%);
   max-width: none;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+}
+
+.video-heading .lead {
+  margin-bottom: 0;
+  font-size: 22px;
 }
 
 .video-shell {
-  width: min(1040px, 100%);
+  width: min(820px, 100%);
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 18px;
   background: rgba(0, 0, 0, 0.38);
@@ -892,6 +902,7 @@ h3 {
 }
 
 .idea-visual .image-stage {
+  height: 500px;
   min-height: 500px;
 }
 

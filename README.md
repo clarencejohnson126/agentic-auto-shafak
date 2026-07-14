@@ -83,8 +83,11 @@ Für die Sprecherstimme wird ein lokales Audio-Asset erzeugt. Der ElevenLabs-Key
 - Video abspielen.
 - Browserfenster bei 1440 x 900, 1920 x 1080 und 1366 x 768 prüfen.
 
+## Aktuelle Bildlage
+
+Für die neun Motive liegen lokale PNG-Kopien in `assets/images/`. Die SVG-Platzhalter in `assets/images/placeholders/` bleiben als Fallback erhalten, falls ein PNG später entfernt oder ersetzt wird.
+
 ## Bekannte Grenzen
 
-- Die finalen Bildmotive sind aktuell hochwertige SVG-Platzhalter.
 - Das Video hängt vom erfolgreichen lokalen Remotion-Rendering ab.
 - Die Datenschutzbox ist eine Produkt- und Vertrauenslogik, keine juristische Beratung.
