@@ -24,11 +24,15 @@ function updateUi(index) {
   });
 }
 
-function goToSlide(index, pushHash = true) {
+function goToSlide(index, pushHash = true, instant = false) {
   const nextIndex = Math.max(0, Math.min(index, slides.length - 1));
   const target = slides[nextIndex];
+  const behavior = instant || prefersReducedMotion ? "auto" : "smooth";
   isProgrammaticScroll = true;
-  target.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" });
+  slides.forEach((slide) => slide.classList.remove("active"));
+  target.classList.add("active");
+  window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  deck.scrollTo({ top: target.offsetTop, behavior });
   target.focus({ preventScroll: true });
   updateUi(nextIndex);
 
@@ -38,7 +42,7 @@ function goToSlide(index, pushHash = true) {
 
   window.setTimeout(() => {
     isProgrammaticScroll = false;
-  }, prefersReducedMotion ? 20 : 520);
+  }, instant || prefersReducedMotion ? 20 : 520);
 }
 
 slides.forEach((slide, index) => {
@@ -210,7 +214,7 @@ videoFullscreen.addEventListener("click", async () => {
 const initialHash = window.location.hash.replace("#", "");
 const initialIndex = slides.findIndex((slide) => slide.id === initialHash);
 if (initialIndex >= 0) {
-  window.requestAnimationFrame(() => goToSlide(initialIndex, false));
+  window.requestAnimationFrame(() => goToSlide(initialIndex, false, true));
 } else {
   slides[0].classList.add("active");
   updateUi(0);
