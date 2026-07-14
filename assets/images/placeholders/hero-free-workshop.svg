@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Freie Werkstatt mit Agent</title>
+  <desc id="desc">Stilisierte Werkstattszene mit Smartphone, Fahrzeug und Datenlinien.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#111b28"/><stop offset="1" stop-color="#07111e"/></linearGradient>
+    <linearGradient id="glow" x1="0" x2="1"><stop stop-color="#25d366"/><stop offset="1" stop-color="#2f6bff"/></linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <g opacity=".22" stroke="#e8f3ff" stroke-width="2">
+    <path d="M150 210h1300M130 330h1340M110 760h1380"/>
+    <path d="M250 180v610M580 120v700M980 160v660M1320 180v610" opacity=".45"/>
+  </g>
+  <ellipse cx="900" cy="760" rx="540" ry="110" fill="#000814" opacity=".42"/>
+  <path d="M330 650c70-140 180-210 335-220h285c130 12 240 83 320 220H330z" fill="#172536" stroke="#4c6788" stroke-width="6"/>
+  <circle cx="520" cy="670" r="78" fill="#08111c" stroke="#dce7f3" stroke-width="14"/>
+  <circle cx="1090" cy="670" r="78" fill="#08111c" stroke="#dce7f3" stroke-width="14"/>
+  <path d="M500 520h530" stroke="#25d366" stroke-width="8" stroke-linecap="round"/>
+  <rect x="1040" y="230" width="240" height="430" rx="34" fill="#0d1724" stroke="#e8f3ff" stroke-width="8"/>
+  <rect x="1065" y="275" width="190" height="310" rx="18" fill="#10251d"/>
+  <path d="M1095 330h120M1095 385h90M1095 440h135" stroke="#d9fdd3" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="1225" cy="530" r="22" fill="#25d366"/>
+  <g stroke="url(#glow)" stroke-width="5" fill="none" opacity=".9">
+    <path d="M950 405c-160-120-330-130-510-28"/>
+    <path d="M1280 430c110-40 190-30 240 30"/>
+    <path d="M1160 230c-20-100-110-150-250-150"/>
+  </g>
+  <g filter="url(#soft)" opacity=".5"><circle cx="1220" cy="245" r="90" fill="#25d366"/><circle cx="365" cy="285" r="120" fill="#2f6bff"/></g>
+  <text x="110" y="115" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="54" font-weight="800">Freie Werkstatt</text>
+  <text x="110" y="175" fill="#aeb8c7" font-family="system-ui, sans-serif" font-size="28">Smartphone, Daten und reale Ausführung</text>
+</svg>

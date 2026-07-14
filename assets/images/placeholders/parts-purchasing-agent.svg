@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Teileeinkaufs-Agent</title>
+  <desc id="desc">Ersatzteile, Lieferzeiten und Marge werden verglichen.</desc>
+  <rect width="1600" height="1000" fill="#101820"/>
+  <g opacity=".15" stroke="#f8fafc"><path d="M0 250h1600M0 500h1600M0 750h1600"/></g>
+  <text x="120" y="150" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="54" font-weight="850">Teile vergleichen</text>
+  <g transform="translate(150 250)">
+    <rect width="330" height="430" rx="24" fill="#f7f3ea"/>
+    <text x="38" y="78" fill="#101820" font-family="system-ui, sans-serif" font-size="34" font-weight="850">Option A</text>
+    <circle cx="110" cy="205" r="70" fill="#172536"/><circle cx="110" cy="205" r="32" fill="#f7f3ea"/>
+    <path d="M55 330h215M55 370h155" stroke="#2f6bff" stroke-width="16" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(635 210)">
+    <rect width="330" height="500" rx="24" fill="#12301f" stroke="#25d366" stroke-width="7"/>
+    <text x="38" y="84" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="34" font-weight="850">Beste Option</text>
+    <circle cx="110" cy="225" r="78" fill="#07111e" stroke="#25d366" stroke-width="14"/><circle cx="110" cy="225" r="34" fill="#f7f3ea"/>
+    <path d="M55 365h220M55 410h180" stroke="#25d366" stroke-width="16" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(1120 250)">
+    <rect width="330" height="430" rx="24" fill="#172536"/>
+    <text x="38" y="78" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="34" font-weight="850">Option C</text>
+    <circle cx="110" cy="205" r="70" fill="#07111e" stroke="#f59e0b" stroke-width="12"/><circle cx="110" cy="205" r="32" fill="#f7f3ea"/>
+    <path d="M55 330h215M55 370h155" stroke="#f59e0b" stroke-width="16" stroke-linecap="round"/>
+  </g>
+  <path d="M500 450h100M990 450h100" stroke="#25d366" stroke-width="14" stroke-linecap="round"/>
+  <text x="620" y="835" fill="#aeb8c7" font-family="system-ui, sans-serif" font-size="32">Preis · Lieferzeit · Marke · Rückgabe</text>
+</svg>

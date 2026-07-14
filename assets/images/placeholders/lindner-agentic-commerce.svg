@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Agentic Commerce Auslöser</title>
+  <desc id="desc">Abstrakte Daten- und Fahrzeughandelsgrafik ohne Personen oder Markenlogos.</desc>
+  <defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#0b1220"/><stop offset="1" stop-color="#101820"/></linearGradient></defs>
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+  <g opacity=".16" stroke="#f8fafc"><path d="M0 720h1600M0 530h1600M0 340h1600"/><path d="M220 0v1000M520 0v1000M880 0v1000M1260 0v1000"/></g>
+  <rect x="160" y="180" width="520" height="520" rx="28" fill="#f7f3ea" opacity=".94"/>
+  <text x="210" y="270" fill="#101820" font-family="system-ui, sans-serif" font-size="46" font-weight="850">Der Schatz</text>
+  <text x="210" y="330" fill="#101820" font-family="system-ui, sans-serif" font-size="46" font-weight="850">liegt in Daten</text>
+  <text x="210" y="410" fill="#526070" font-family="system-ui, sans-serif" font-size="28">Kunden · Fahrzeuge · Prozesse</text>
+  <path d="M220 540h380M220 590h300M220 640h340" stroke="#2f6bff" stroke-width="16" stroke-linecap="round"/>
+  <g fill="none" stroke-width="6">
+    <path d="M780 510C920 300 1120 270 1330 420" stroke="#2f6bff"/>
+    <path d="M780 610c170-80 360-60 580 70" stroke="#25d366"/>
+    <path d="M760 410c230 10 410 95 560 250" stroke="#f59e0b"/>
+  </g>
+  <g fill="#101820" stroke="#e8f3ff" stroke-width="5">
+    <circle cx="790" cy="510" r="32"/><circle cx="1110" cy="305" r="32"/><circle cx="1340" cy="430" r="32"/>
+    <circle cx="1000" cy="590" r="32"/><circle cx="1360" cy="680" r="32"/>
+  </g>
+  <path d="M870 780c70-75 155-112 260-112h95c86 8 155 45 207 112H870z" fill="#172536" stroke="#4c6788" stroke-width="6"/>
+  <circle cx="1010" cy="800" r="44" fill="#07111e" stroke="#e8f3ff" stroke-width="10"/>
+  <circle cx="1320" cy="800" r="44" fill="#07111e" stroke="#e8f3ff" stroke-width="10"/>
+  <text x="830" y="170" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="34" font-weight="800">Agentic Commerce</text>
+  <text x="830" y="220" fill="#aeb8c7" font-family="system-ui, sans-serif" font-size="24">Von Analyse zu Handlung</text>
+</svg>

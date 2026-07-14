@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101820">
+    <title>Agentic Automotive | Werkstatt-Agenten fuer Shafaq</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Direkt zur Präsentation</a>
+
+    <div class="ambient" aria-hidden="true">
+      <span class="track track-a"></span>
+      <span class="track track-b"></span>
+      <span class="track track-c"></span>
+      <span class="signal signal-a"></span>
+      <span class="signal signal-b"></span>
+    </div>
+
+    <header class="presentation-ui" aria-label="Präsentationssteuerung">
+      <div class="progress-shell" aria-hidden="true">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="topline">
+        <div class="brand-mark" aria-label="Agentic Automotive">
+          <span class="brand-dot"></span>
+          <span>Agentic Automotive</span>
+        </div>
+        <div class="slide-counter" id="slideCounter" aria-live="polite">01 / 14</div>
+        <div class="control-cluster">
+          <button class="icon-button" type="button" id="homeButton" aria-label="Zurück zum Anfang" title="Zurück zum Anfang">
+            <span aria-hidden="true">⌂</span>
+          </button>
+          <button class="icon-button" type="button" id="prevButton" aria-label="Vorherige Folie" title="Vorherige Folie">
+            <span aria-hidden="true">↑</span>
+          </button>
+          <button class="icon-button" type="button" id="nextButton" aria-label="Nächste Folie" title="Nächste Folie">
+            <span aria-hidden="true">↓</span>
+          </button>
+          <button class="icon-button" type="button" id="fullscreenButton" aria-label="Vollbild umschalten" title="Vollbild">
+            <span aria-hidden="true">⛶</span>
+          </button>
+        </div>
+      </div>
+      <nav class="nav-dots" id="navDots" aria-label="Foliennavigation"></nav>
+    </header>
+
+    <main id="main" class="deck">
+      <section class="slide hero-slide" id="titel" data-title="Titel" tabindex="-1">
+        <div class="slide-grid hero-grid">
+          <div class="copy-block hero-copy">
+            <p class="eyebrow">Gesprächsgrundlage für Shafaq</p>
+            <h1>Agentic Automotive</h1>
+            <p class="lead">Welche KI-Agenten könnten in der echten Werkstattwelt funktionieren?</p>
+            <div class="framing-strip">
+              <span>Vier Ideen</span>
+              <span>Keine fertige Wahrheit</span>
+              <span>Shafaq entscheidet, was Realität überlebt</span>
+            </div>
+            <p class="plain-note">Heute geht es nicht um einen Verkauf und nicht um eine Partnerschaft. Es geht um ehrliche Einschätzung aus der Werkstattrealität.</p>
+            <p class="key-hint">Steuerung: Scrollen, Pfeiltasten, Leertaste oder Navigationspunkte.</p>
+          </div>
+          <figure class="image-stage hero-image">
+            <img class="fallback-image" src="assets/images/hero-free-workshop.png" data-fallback="assets/images/placeholders/hero-free-workshop.svg" alt="Stilisierte freie Kfz-Werkstatt mit Smartphone, Fahrzeug und dezentem digitalen Agenten">
+          </figure>
+        </div>
+      </section>
+
+      <section class="slide" id="ausloeser" data-title="Auslöser" tabindex="-1">
+        <div class="slide-grid">
+          <div class="copy-block">
+            <p class="eyebrow">Warum jetzt?</p>
+            <h2>Der Schatz liegt nicht in einem Chatbot. Er liegt in Daten und Prozessen.</h2>
+            <p class="lead">Autoland denkt über Kundendaten, digitale Prozesse und KI im Vertrieb nach. Die spannende Frage ist: Was davon funktioniert bei freien Werkstätten?</p>
+            <div class="quote-card">
+              <p>„Spezialisierung auf ein Vertical trennt die Spreu vom Weizen. Man muss die Prozesskompetenz in einer Branche haben.“</p>
+              <span>Gedanke aus dem Lindner-Interview, sinngemäß verdichtet</span>
+            </div>
+          </div>
+          <div class="visual-stack">
+            <figure class="image-stage">
+              <img class="fallback-image" src="assets/images/lindner-agentic-commerce.png" data-fallback="assets/images/placeholders/lindner-agentic-commerce.svg" alt="Abstrakte Verbindung aus Automobilhandel, Datenpunkten und Agentic Commerce ohne echte Personen oder Markenlogos">
+            </figure>
+            <div class="micro-grid">
+              <span>Leads vorqualifizieren</span>
+              <span>Kunden aktivieren</span>
+              <span>Angebote vorbereiten</span>
+              <span>Nächste Schritte ausführen</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" id="agentic-commerce" data-title="Agentic Commerce" tabindex="-1">
+        <div class="slide-grid centered-grid">
+          <div class="copy-block wide-copy">
+            <p class="eyebrow">Agentic Commerce, ohne Buzzword-Nebel</p>
+            <h2>Nicht nur reden. Einen Vorgang weiterbringen.</h2>
+            <p class="lead">Ein Agent erkennt einen Bedarf, nutzt erlaubte Daten, fragt fehlende Informationen ab und bringt einen wirtschaftlichen Prozess bis zum nächsten konkreten Ergebnis.</p>
+          </div>
+          <div class="process-map" aria-label="Ablauf eines spezialisierten Agenten">
+            <div class="process-node">
+              <strong>1</strong>
+              <span>Bedarf erkennen</span>
+            </div>
+            <div class="process-node">
+              <strong>2</strong>
+              <span>Daten prüfen</span>
+            </div>
+            <div class="process-node">
+              <strong>3</strong>
+              <span>Rückfrage stellen</span>
+            </div>
+            <div class="process-node">
+              <strong>4</strong>
+              <span>Freigabe holen</span>
+            </div>
+            <div class="process-node result-node">
+              <strong>5</strong>
+              <span>Ergebnis auslösen</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" id="chatbot-vs-agent" data-title="Chatbot vs. Agent" tabindex="-1">
+        <div class="copy-block compact-heading">
+          <p class="eyebrow">Der wichtigste Unterschied</p>
+          <h2>Ein Chatbot erklärt. Ein Agent erledigt.</h2>
+        </div>
+        <div class="comparison-layout">
+          <article class="comparison-panel">
+            <span class="panel-label muted-label">ChatGPT oder normaler Chatbot</span>
+            <h3>Gibt Antworten</h3>
+            <ul class="check-list">
+              <li>erklärt Dokumente</li>
+              <li>schreibt Texte</li>
+              <li>nennt Möglichkeiten</li>
+              <li>wartet auf den nächsten Befehl</li>
+            </ul>
+            <p>Der Mensch muss den Prozess selbst fortsetzen.</p>
+          </article>
+          <article class="comparison-panel agent-panel">
+            <span class="panel-label">Spezialisierter KI-Agent</span>
+            <h3>Erzeugt ein Ergebnis</h3>
+            <ul class="check-list">
+              <li>fragt fehlende Daten ab</li>
+              <li>nutzt freigegebene Systeme</li>
+              <li>bereitet Entscheidungen vor</li>
+              <li>holt Freigaben ein</li>
+            </ul>
+            <p>Das Geschäftsmodell ist der Prozess, nicht die KI an sich.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="slide" id="whatsapp" data-title="WhatsApp" tabindex="-1">
+        <div class="slide-grid">
+          <div class="copy-block">
+            <p class="eyebrow">Oberfläche</p>
+            <h2>Keine neue Software. Einfach eine Nachricht.</h2>
+            <p class="lead">Viele Werkstätten arbeiten ohnehin mit Telefon, Fotos, Dokumenten und Sprachnachrichten. Ein Agent muss dort starten, wo der Alltag schon stattfindet.</p>
+            <div class="benefit-row">
+              <span>bekannt</span>
+              <span>schnell</span>
+              <span>mehrsprachig</span>
+              <span>Fotos & Dokumente</span>
+              <span>Mensch übernimmt jederzeit</span>
+            </div>
+            <figure class="image-stage inline-art">
+              <img class="fallback-image" src="assets/images/whatsapp-workshop-agent.png" data-fallback="assets/images/placeholders/whatsapp-workshop-agent.svg" alt="Werkstattinhaber nutzt eine WhatsApp-Sprachnachricht für einen KI-Arbeitsprozess">
+            </figure>
+          </div>
+          <div class="phone-mockup" data-chat>
+            <div class="phone-top">
+              <span class="status-dot"></span>
+              <div>
+                <strong>Werkstatt-Agent</strong>
+                <small>WhatsApp-Mock-up / Demo</small>
+              </div>
+            </div>
+            <div class="chat-thread">
+              <div class="message outbound">Ich habe hier einen HU-Bericht. Kannst du daraus einen Reparaturauftrag vorbereiten?</div>
+              <div class="message inbound">Ja. Schick mir bitte ein Foto des Berichts.</div>
+              <div class="message outbound attachment">Prüfbericht hochgeladen</div>
+              <div class="message inbound typing">Bericht wird analysiert...</div>
+              <div class="message inbound">Ich habe drei relevante Mängel erkannt. Was soll ich zuerst vorbereiten?</div>
+              <div class="chat-actions">
+                <button type="button">Arbeiten strukturieren</button>
+                <button type="button">Kostenvoranschlag</button>
+                <button type="button">Technische Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide video-slide" id="video" data-title="Video" tabindex="-1">
+        <div class="copy-block video-heading">
+          <p class="eyebrow">Kino-Moment</p>
+          <h2>Die Idee in 60 Sekunden</h2>
+          <p class="lead">Vom Chatbot zum handelnden Werkstatt-Agenten. Das Video startet nicht automatisch und kann mit Ton abgespielt werden.</p>
+        </div>
+        <div class="video-shell">
+          <video id="explainerVideo" preload="metadata" poster="assets/video/agentic-automotive-poster.svg" aria-label="Agentic Automotive Erklärvideo">
+            <source src="assets/video/agentic-automotive-explainer.mp4" type="video/mp4">
+          </video>
+          <div class="video-fallback" id="videoFallback" hidden>
+            Das lokale MP4 ist noch nicht gerendert. Die Präsentation bleibt nutzbar; nach dem Rendering erscheint hier das Video.
+          </div>
+          <div class="video-controls" aria-label="Videosteuerung">
+            <button type="button" id="videoPlay">Play</button>
+            <button type="button" id="videoReplay">Neu starten</button>
+            <div class="video-progress" aria-hidden="true">
+              <span id="videoProgress"></span>
+            </div>
+            <span class="video-time" id="videoTime">00:00</span>
+            <button type="button" id="videoFullscreen">Vollbild</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide idea-slide" id="maengel-agent" data-title="Mängel-Agent" tabindex="-1">
+        <div class="slide-grid idea-grid">
+          <div class="copy-block">
+            <p class="eyebrow">B2B-Idee 1</p>
+            <h2>Mängel-zu-Auftrag-Agent</h2>
+            <p class="lead">Vom Prüfbericht zum verständlichen, vorbereiteten Werkstattauftrag.</p>
+            <div class="timeline">
+              <span>Bericht lesen</span>
+              <span>Mängel extrahieren</span>
+              <span>Auftrag vorbereiten</span>
+              <span>Freigabe einholen</span>
+              <span>Nachprüfung koordinieren</span>
+            </div>
+            <div class="idea-question">Was passiert nach einem nicht bestandenen HU-Termin wirklich?</div>
+          </div>
+          <div class="idea-visual">
+            <figure class="image-stage">
+              <img class="fallback-image" src="assets/images/defects-to-order.png" data-fallback="assets/images/placeholders/defects-to-order.svg" alt="Vom HU-Mängelbericht zum vorbereiteten Reparaturauftrag">
+            </figure>
+            <div class="phone-mockup mini-phone" data-chat>
+              <div class="phone-top"><span class="status-dot"></span><strong>Agent</strong><small>Demo</small></div>
+              <div class="chat-thread">
+                <div class="message inbound">Ihr Fahrzeug hat die Hauptuntersuchung noch nicht bestanden.</div>
+                <div class="message inbound">Erkannt: Bremsbeläge vorne, Kennzeichenbeleuchtung, Staubmanschette.</div>
+                <div class="message inbound">Voraussichtlicher Komplettpreis: 640 Euro. Termin: Donnerstag, 09:00 Uhr.</div>
+                <div class="chat-actions">
+                  <button type="button">Auftrag freigeben</button>
+                  <button type="button">Details ansehen</button>
+                  <button type="button">Rückruf</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide idea-slide" id="teile-agent" data-title="Teileeinkauf" tabindex="-1">
+        <div class="slide-grid idea-grid">
+          <div class="copy-block">
+            <p class="eyebrow">B2B-Idee 2</p>
+            <h2>Teileeinkaufs-Agent</h2>
+            <p class="lead">Das richtige Teil, rechtzeitig verfügbar und mit vernünftiger Marge.</p>
+            <div class="timeline">
+              <span>Fahrzeug erkennen</span>
+              <span>Varianten prüfen</span>
+              <span>Lieferanten vergleichen</span>
+              <span>Marge bewerten</span>
+              <span>Bestellung freigeben</span>
+            </div>
+            <div class="idea-question">Was zählt im Alltag mehr: Preis, Geschwindigkeit, Marke oder Rückgabemöglichkeit?</div>
+          </div>
+          <div class="idea-visual">
+            <figure class="image-stage">
+              <img class="fallback-image" src="assets/images/parts-purchasing-agent.png" data-fallback="assets/images/placeholders/parts-purchasing-agent.svg" alt="Vergleich von Ersatzteilen, Lieferzeiten, Marken und Preisen">
+            </figure>
+            <div class="phone-mockup mini-phone" data-chat>
+              <div class="phone-top"><span class="status-dot"></span><strong>Mechaniker</strong><small>Demo</small></div>
+              <div class="chat-thread">
+                <div class="message outbound">Golf 7. Bremsscheiben und Beläge vorne. Heute fertig.</div>
+                <div class="message inbound typing">Lieferanten werden verglichen...</div>
+                <div class="message inbound">Beste Option: ATE, 219 Euro Einkauf, Lieferung bis 12:30 Uhr, erwartete Marge 181 Euro.</div>
+                <div class="chat-actions">
+                  <button type="button">Bestellung freigeben</button>
+                  <button type="button">Günstiger</button>
+                  <button type="button">Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide idea-slide" id="rueckhol-agent" data-title="Rückholung" tabindex="-1">
+        <div class="slide-grid idea-grid">
+          <div class="copy-block">
+            <p class="eyebrow">B2B-Idee 3</p>
+            <h2>Kunden-Rückhol-Agent</h2>
+            <p class="lead">Bestehende Kunden rechtzeitig zurück in die Werkstatt bringen, bevor der Anlass verloren geht.</p>
+            <div class="timeline">
+              <span>Anlass erkennen</span>
+              <span>Einwilligung prüfen</span>
+              <span>Termin anbieten</span>
+              <span>Antwort dokumentieren</span>
+              <span>Auslastung verbessern</span>
+            </div>
+            <div class="idea-question">Nutzen freie Werkstätten ihre vorhandenen Kundendaten aktiv?</div>
+          </div>
+          <div class="idea-visual">
+            <figure class="image-stage">
+              <img class="fallback-image" src="assets/images/customer-return-agent.png" data-fallback="assets/images/placeholders/customer-return-agent.svg" alt="Bestehende Werkstattkunden werden zu passenden Terminen zurückgeführt">
+            </figure>
+            <div class="phone-mockup mini-phone" data-chat>
+              <div class="phone-top"><span class="status-dot"></span><strong>Werkstatt</strong><small>Demo</small></div>
+              <div class="chat-thread">
+                <div class="message inbound">Hallo Herr Yilmaz, bei Ihrem Passat wird im September die Hauptuntersuchung fällig.</div>
+                <div class="message inbound">Wir können Dienstag 09:30 Uhr oder Donnerstag 14:00 Uhr anbieten.</div>
+                <div class="chat-actions">
+                  <button type="button">Dienstag buchen</button>
+                  <button type="button">Donnerstag buchen</button>
+                  <button type="button">Später erinnern</button>
+                  <button type="button">Keine Nachrichten mehr</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide idea-slide" id="gebrauchtwagen-agent" data-title="Gebrauchtwagen" tabindex="-1">
+        <div class="slide-grid idea-grid">
+          <div class="copy-block">
+            <p class="eyebrow">B2C-Idee</p>
+            <h2>Gebrauchtwagen-Kaufagent</h2>
+            <p class="lead">Vom Suchwunsch bis zum technisch geprüften Fahrzeug, bevor ein Privatkunde blind zur Besichtigung fährt.</p>
+            <div class="timeline">
+              <span>Wunsch klären</span>
+              <span>Inserate vergleichen</span>
+              <span>Verkäufer fragen</span>
+              <span>Prüfung koordinieren</span>
+              <span>Entscheidung vorbereiten</span>
+            </div>
+            <div class="idea-question">Welche Fehler machen private Käufer immer wieder?</div>
+          </div>
+          <div class="idea-visual">
+            <figure class="image-stage">
+              <img class="fallback-image" src="assets/images/used-car-buying-agent.png" data-fallback="assets/images/placeholders/used-car-buying-agent.svg" alt="Privatkunde sucht ein Fahrzeug, Agent prüft Inserate, Verkäuferantworten und technische Informationen">
+            </figure>
+            <div class="phone-mockup mini-phone" data-chat>
+              <div class="phone-top"><span class="status-dot"></span><strong>Kaufagent</strong><small>Demo</small></div>
+              <div class="chat-thread">
+                <div class="message outbound">Familienwagen bis 18.000 Euro. Automatik, maximal 100.000 km.</div>
+                <div class="message inbound">Ich habe fünf passende Fahrzeuge gefunden. Zwei Angebote sind unvollständig.</div>
+                <div class="message inbound">Bei einem fehlen Unfallhistorie, Wartungsnachweise und letzte HU.</div>
+                <div class="chat-actions">
+                  <button type="button">Verkäufer kontaktieren</button>
+                  <button type="button">Vergleichen</button>
+                  <button type="button">Suche anpassen</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" id="matrix" data-title="Bewertung" tabindex="-1">
+        <div class="copy-block compact-heading">
+          <p class="eyebrow">Ehrliche Ersteinschätzung</p>
+          <h2>Welche Hypothese wirkt tragfähig?</h2>
+          <p class="lead">Keine Siegerbehauptung. Nur eine Gesprächsmatrix, damit Shafaq widersprechen kann.</p>
+        </div>
+        <div class="matrix-wrap" role="table" aria-label="Vergleichsmatrix der vier Ideen">
+          <div class="matrix-row matrix-head" role="row">
+            <span role="columnheader">Idee</span>
+            <span role="columnheader">Nutzen</span>
+            <span role="columnheader">Pilot</span>
+            <span role="columnheader">Aufwand</span>
+            <span role="columnheader">Risiko</span>
+            <span role="columnheader">Verteidigbarkeit</span>
+          </div>
+          <div class="matrix-row" role="row">
+            <strong role="cell">Mängel-zu-Auftrag</strong>
+            <span role="cell">hoch</span>
+            <span role="cell">gut</span>
+            <span role="cell">mittel</span>
+            <span role="cell">mittel</span>
+            <span role="cell">hoch</span>
+          </div>
+          <div class="matrix-row" role="row">
+            <strong role="cell">Teileeinkauf</strong>
+            <span role="cell">hoch</span>
+            <span role="cell">schwerer</span>
+            <span role="cell">hoch</span>
+            <span role="cell">mittel</span>
+            <span role="cell">hoch</span>
+          </div>
+          <div class="matrix-row" role="row">
+            <strong role="cell">Kunden-Rückholung</strong>
+            <span role="cell">direkt</span>
+            <span role="cell">schnell</span>
+            <span role="cell">mittel</span>
+            <span role="cell">hoch</span>
+            <span role="cell">mittel</span>
+          </div>
+          <div class="matrix-row" role="row">
+            <strong role="cell">Gebrauchtwagen</strong>
+            <span role="cell">hoch</span>
+            <span role="cell">gut</span>
+            <span role="cell">mittel</span>
+            <span role="cell">mittel</span>
+            <span role="cell">nur mit Ausführung</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" id="datenschutz" data-title="Grenzen" tabindex="-1">
+        <div class="slide-grid">
+          <div class="copy-block">
+            <p class="eyebrow">Datenschutz und Kontrolle</p>
+            <h2>Kein Blindflug. Keine ungefragten Daten. Keine automatischen Entscheidungen.</h2>
+            <p class="lead">Gerade für Shafaq ist Vertrauen ein Kernpunkt. Deshalb muss der Agent Grenzen haben, bevor er irgendeinen Prozess ausführt.</p>
+            <div class="trust-list">
+              <span>Keine Nutzung von Shafaqs Kundendaten</span>
+              <span>Keine Prüfmarken oder fremden Logos</span>
+              <span>Einwilligung vor aktiver Ansprache</span>
+              <span>Menschliche Freigabe bei Geld und Technik</span>
+              <span>Jeder Betrieb bleibt Herr seiner Daten</span>
+              <span>Jederzeit Übergabe an einen Menschen</span>
+            </div>
+          </div>
+          <figure class="image-stage">
+            <img class="fallback-image" src="assets/images/privacy-and-control.png" data-fallback="assets/images/placeholders/privacy-and-control.svg" alt="Lokale Datenkontrolle, Freigabe durch Menschen und getrennte Systeme">
+          </figure>
+        </div>
+      </section>
+
+      <section class="slide" id="vision" data-title="Vision" tabindex="-1">
+        <div class="copy-block compact-heading">
+          <p class="eyebrow">Gemeinsamer Zusammenhang</p>
+          <h2>Eine mögliche Prozesskette, keine fertige Produktfamilie.</h2>
+          <p class="lead">Wenn eine Idee trägt, könnten spätere Bausteine denselben Werkstattalltag weiterführen.</p>
+        </div>
+        <div class="vision-flow">
+          <div><strong>1</strong><span>Kunde zurückholen</span></div>
+          <div><strong>2</strong><span>Mängel verstehen</span></div>
+          <div><strong>3</strong><span>Teile beschaffen</span></div>
+          <div><strong>4</strong><span>Reparatur ausführen</span></div>
+          <div><strong>5</strong><span>Daten aktualisieren</span></div>
+          <div><strong>6</strong><span>Nächsten Anlass erkennen</span></div>
+        </div>
+        <p class="vision-note">Langfristige Vision: ein agentisches Betriebssystem für freie Werkstätten und Autofahrer. Heute zählt aber nur: Welche Hypothese überlebt die Realität?</p>
+      </section>
+
+      <section class="slide closing-slide" id="abschluss" data-title="Abschluss" tabindex="-1">
+        <div class="slide-grid">
+          <div class="copy-block">
+            <p class="eyebrow">Jetzt wird es interessant</p>
+            <h2>Welche Idee überlebt die Werkstattrealität?</h2>
+            <p class="lead">Ich will heute nichts verkaufen und keine Partnerschaft beschließen. Ich möchte verstehen, welche Idee Bestand hat.</p>
+            <figure class="image-stage inline-art">
+              <img class="fallback-image" src="assets/images/shafaq-consultation.png" data-fallback="assets/images/placeholders/shafaq-consultation.svg" alt="Zwei Freunde diskutieren auf Augenhöhe über Werkstattprozesse, ohne konkrete Personen realistisch darzustellen">
+            </figure>
+          </div>
+          <div class="closing-panel">
+            <div class="choice-grid" aria-label="Ideenauswahl">
+              <button type="button">Mängel-zu-Auftrag</button>
+              <button type="button">Teileeinkauf</button>
+              <button type="button">Kunden-Rückholung</button>
+              <button type="button">Gebrauchtwagen</button>
+              <button type="button">Keine davon</button>
+            </div>
+            <ol class="final-questions">
+              <li>Welche Idee löst ein echtes Problem?</li>
+              <li>Welche ist Quatsch?</li>
+              <li>Welcher Prozess fehlt?</li>
+              <li>Wofür würden Werkstattinhaber bezahlen?</li>
+              <li>Was übersieht Clarence als Branchenfremder?</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

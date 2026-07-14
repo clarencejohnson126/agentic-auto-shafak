@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Datenschutz und Kontrolle</title>
+  <desc id="desc">Getrennte Systeme, Schloss und menschliche Freigabe.</desc>
+  <rect width="1600" height="1000" fill="#0b1220"/>
+  <g opacity=".16" stroke="#f8fafc"><path d="M160 180h1280M160 820h1280M160 180v640M1440 180v640"/></g>
+  <rect x="185" y="250" width="410" height="470" rx="28" fill="#172536" stroke="#526070" stroke-width="6"/>
+  <rect x="995" y="250" width="410" height="470" rx="28" fill="#172536" stroke="#526070" stroke-width="6"/>
+  <text x="250" y="345" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="40" font-weight="850">Betrieb</text>
+  <text x="1060" y="345" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="40" font-weight="850">Agent</text>
+  <path d="M280 430h220M280 500h170M280 570h240" stroke="#25d366" stroke-width="16" stroke-linecap="round"/>
+  <path d="M1090 430h220M1090 500h170M1090 570h240" stroke="#2f6bff" stroke-width="16" stroke-linecap="round"/>
+  <g transform="translate(690 330)">
+    <rect x="55" y="170" width="220" height="180" rx="28" fill="#f7f3ea"/>
+    <path d="M95 170v-70c0-80 140-80 140 0v70" stroke="#f7f3ea" stroke-width="36" fill="none" stroke-linecap="round"/>
+    <circle cx="165" cy="255" r="24" fill="#101820"/>
+    <path d="M165 280v45" stroke="#101820" stroke-width="16" stroke-linecap="round"/>
+  </g>
+  <path d="M610 490h120M870 490h120" stroke="#f59e0b" stroke-width="10" stroke-linecap="round" stroke-dasharray="20 18"/>
+  <text x="355" y="845" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="44" font-weight="850">Freigabe vor Ausführung</text>
+</svg>
